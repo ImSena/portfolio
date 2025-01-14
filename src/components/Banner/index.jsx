@@ -1,0 +1,22 @@
+import React from "react";
+import Button from "../Button";
+
+const Banner = ()=> {
+    return(
+        <section>
+            <div>
+                <img src="https://placehold.co/202x197" alt="Bruno's Image" />
+                <h2>I'm Bruno Sena</h2>
+                <h3>Development Fullstack</h3>
+            </div>
+
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iste a quod. Doloribus odit maxime ipsum dolorum optio, nostrum non. Molestias, dolor! Tempore, hic. Doloremque est obcaecati delectus enim amet!
+            </div>
+
+            <Button title={"Contact Me"}/>
+        </section>
+    )
+}
+
+export default Banner;
