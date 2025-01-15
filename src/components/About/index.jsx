@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "../Button";
 import Title from "../Title";
+import Section from '../Section';
 
 const About = ()=>{
     return (
-        <section>
+        <Section>
             <Title title={"About Me"} subtitle={"Get to Know me"}/>
 
             <div>
@@ -15,10 +16,10 @@ const About = ()=>{
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ipsam ullam nihil pariatur minima, odio saepe suscipit dolorem, perferendis rerum deserunt unde distinctio accusamus praesentium. Velit incidunt sapiente inventore modi!</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magni reiciendis odio mollitia asperiores iste temporibus!</p>
-
-                <Button title={"Download Resume"}/>
             </div>
-        </section>
+
+            <Button title={"Download Resume"}/>
+        </Section>
     );
 }
 

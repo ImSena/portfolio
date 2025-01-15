@@ -1,12 +1,13 @@
 import React from "react";
+import ButtonStyle from "./style";
 
 const Button = ({title}) => {
     return (
-        <div>
+        <ButtonStyle>
             <button>
                 {title}
             </button>
-        </div>
+        </ButtonStyle>
     )
 }
 

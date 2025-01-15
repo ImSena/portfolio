@@ -3,6 +3,8 @@ import Title from "../Title";
 import Input from "../Input";
 import Select from "../Select";
 import Textarea from "../Textarea";
+import Section from "../Section";
+
 const Form = ()=>{
 
     const service = [
@@ -12,7 +14,7 @@ const Form = ()=>{
     ]
 
     return(
-        <section>
+        <Section>
             <Title title={"Get In Touch"} subtitle={"Lets work!"}/>
 
             <form>
@@ -43,7 +45,7 @@ const Form = ()=>{
                     </button>
                 </div>
             </form>
-        </section>
+        </Section>
     )
 }
 

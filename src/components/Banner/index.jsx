@@ -1,21 +1,28 @@
 import React from "react";
 import Button from "../Button";
+import BannerStyle from '../Banner/style.js';
 
-const Banner = ()=> {
-    return(
-        <section>
+const Banner = () => {
+    return (
+        <BannerStyle>
             <div>
-                <img src="https://placehold.co/202x197" alt="Bruno's Image" />
-                <h2>I'm Bruno Sena</h2>
-                <h3>Development Fullstack</h3>
+                <div className="perfil">
+                    <img src="https://placehold.co/202x197" alt="Bruno's Image" />
+                </div>
+                <div>
+                    <h2>I'm Bruno Sena</h2>
+                    <h3>Development Fullstack</h3>
+                </div>
             </div>
 
             <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iste a quod. Doloribus odit maxime ipsum dolorum optio, nostrum non. Molestias, dolor! Tempore, hic. Doloremque est obcaecati delectus enim amet!
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iste a quod. Doloribus odit maxime ipsum dolorum optio, nostrum non. Molestias, dolor! Tempore, hic. Doloremque est obcaecati delectus enim amet!
+                </p>
             </div>
 
-            <Button title={"Contact Me"}/>
-        </section>
+            <Button title={"Contact Me"} />
+        </BannerStyle>
     )
 }
 

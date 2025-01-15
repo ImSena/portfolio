@@ -1,12 +1,13 @@
 import React from "react";
+import TitleStyle from "./style";
 
 const Title = ({title, subtitle})=>{
 
     return(
-        <div>
+        <TitleStyle>
             <h2>{title}</h2>
             <h3>{subtitle}</h3>
-        </div>
+        </TitleStyle>
     );
 
 }

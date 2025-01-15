@@ -2,11 +2,12 @@ import React from "react";
 import Title from "../Title";
 import TabProjects from "../TabProjects";
 import CardProjects  from "../CardProjects";
+import Section from "../Section";
 
 const Projects = ()=>{
 
     return(
-        <section>
+        <Section>
             <Title title={"Projects"} subtitle={"Some of my Work"}/>
 
             <TabProjects />
@@ -17,7 +18,7 @@ const Projects = ()=>{
                 content={"Content"}
                 path={"/project"}
              />
-        </section>
+        </Section>
     )
 
 }
