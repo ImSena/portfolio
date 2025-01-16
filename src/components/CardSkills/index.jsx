@@ -3,9 +3,9 @@ import CardSkillsStyled from "./style";
 
 const CardSkills = ({ title, content, img = false, icone }) => {
     return (
-        <CardSkillsStyled img={img}>
+        <CardSkillsStyled img={img} className={`${img ? "highlight" : ""}`}>
             <div>
-                <div className="icone">
+                <div className="icon">
                     {icone}
                 </div>
 
@@ -22,7 +22,7 @@ const CardSkills = ({ title, content, img = false, icone }) => {
 
             {
                 img && (
-                    <div>
+                    <div className="containerImg">
                         <img src={img} alt="" />
                     </div>
                 )

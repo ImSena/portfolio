@@ -9,8 +9,8 @@ const BannerStyle = styled.section`
     justify-content: center;
     text-align: center;
     margin-top: 4rem;
-    margin-bottom:  10rem;
-    padding: 0 25%;
+    margin-bottom:  1rem;
+    max-width: 1000px;
 
     .perfil{
         margin: 1rem 0;

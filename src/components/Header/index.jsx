@@ -1,8 +1,8 @@
 import React from "react";
-import { CiBrightnessDown } from "react-icons/ci";
+import { CiBrightnessDown, CiDark } from "react-icons/ci";
 import HeaderStyle from "./style";
 
-const Header = () => {
+const Header = ({toggleTheme, theme}) => {
     return (
         <HeaderStyle>
             <div className="logo">
@@ -28,8 +28,15 @@ const Header = () => {
 
 
 
-            <div className="theme">
-                <CiBrightnessDown size={30} />
+            <div className="theme" onClick={toggleTheme}>
+                {
+                    
+                    theme == "dark" ? (
+                        <CiBrightnessDown size={30} />
+                    ) : (
+                        <CiDark size={30} />
+                    )
+                }
             </div>
         </HeaderStyle>
     );

@@ -6,8 +6,9 @@ const HeaderStyle = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 10rem;
+  padding: 2rem 10rem;
   color: #ffffff;
+  width: 100%;
 
   .logo h1 {
     font-family: 'Inter', serif; /* Estilo elegante para o texto da logo */

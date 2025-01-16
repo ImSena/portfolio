@@ -9,8 +9,11 @@ const SectionStyled = styled.section`
     justify-content: center;
     text-align: center;
     margin-top: 4rem;
-    margin-bottom:  10rem;
-    padding: 0 20%;
+    margin-bottom:  15rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
 
     p{
         font-size: 1rem;
