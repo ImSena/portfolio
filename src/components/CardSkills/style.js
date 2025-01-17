@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const CardSkillsStyled = styled.div`
-  background: linear-gradient(90deg, #1C1C1C 0%, #121212 50%, #050505 100%);
+  background: linear-gradient(90deg, ${(props) => props.theme.cardSkills.primary} 0%, ${(props) => props.theme.cardSkills.secondary} 50%, ${(props) => props.theme.cardSkills.thirth} 100%);
   background-blend-mode: overlay;
   border-radius: 1rem;
-  border: 1px solid #2B2B2B;
+  border: 1px solid ${(props) => props.theme.cardSkills.border};
   width: 100%;
   padding: 2rem;
   display: flex;
@@ -21,20 +21,20 @@ const CardSkillsStyled = styled.div`
   }
 
   h4 {
-    color: #fff;
+    color: ${(props) => props.theme.textContent};
     font-size: 1.2rem;
     margin: 1rem 0;
     font-weight: 900;
   }
 
   p {
-    color: #e1e1e1;
-    font-weight: 300;
+    color: ${(props) => props.theme.paragraph};
+    font-weight: 400;
     font-size: 1rem;
   }
 
   .icon {
-    background-color: #F5F8FF;
+    background-color: ${(props)=>props.theme.iconSkills.background};
     border-radius: 0.5625rem;
     width: 2.75rem;
     height: 2.75rem;
@@ -42,7 +42,7 @@ const CardSkillsStyled = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 2.5rem;
-    color: #1a1a1a;
+    color: ${(props)=>props.theme.iconSkills.color};
     padding: 5px;
     font-size: 1.5rem;
     margin-bottom: 1rem;

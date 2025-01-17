@@ -29,7 +29,7 @@ const BannerStyle = styled.section`
     h3{
         margin-top: 0;
         font-weight: bold;
-        background: linear-gradient(90deg, #4FC3F7, #fff);
+        background: linear-gradient(90deg, #4FC3F7, ${(props) => props.theme.textSubtitle});
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent; 
     }

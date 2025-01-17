@@ -7,13 +7,13 @@ const HeaderStyle = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 2rem 10rem;
-  color: #ffffff;
+  color: ${(props)=>props.theme.header.color};
   width: 100%;
 
   .logo h1 {
     font-family: 'Inter', serif; /* Estilo elegante para o texto da logo */
     font-size: 2rem;
-    color: #ffffff;
+    color:${(props)=>props.theme.header.logo};
   }
 
   nav {
@@ -29,7 +29,7 @@ const HeaderStyle = styled.header`
       li {
         cursor: pointer;
         font-size: 1rem;
-        color: #d1d1d1; /* Cor clara para o texto */
+        color: ${(props)=>props.theme.header.color};
 
         &:hover {
           color: #007bff; /* Destaque no hover */
@@ -39,7 +39,8 @@ const HeaderStyle = styled.header`
   }
 
   button{
-    border-color: #4FC3F7;
+    border-color: ${(props)=>props.theme.header.button.border};
+    color: ${(props)=>props.theme.header.button.color};
     background-color: transparent;
   }
 
@@ -48,7 +49,7 @@ const HeaderStyle = styled.header`
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    color: #ffffff;
+    color: ${(props)=> props.theme.header.icon};
     cursor: pointer;
 
     &:hover {

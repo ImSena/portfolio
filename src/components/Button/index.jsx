@@ -1,11 +1,11 @@
 import React from "react";
 import ButtonStyle from "./style";
 
-const Button = ({title}) => {
+const Button = (props) => {
     return (
-        <ButtonStyle>
+        <ButtonStyle banner={props.banner}>
             <button>
-                {title}
+                {props.title}
             </button>
         </ButtonStyle>
     )

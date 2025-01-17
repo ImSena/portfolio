@@ -1,14 +1,17 @@
 import React from "react";
+import TextareaStyle from "./style";
 
-const Textarea = ({ label, name }) => {
+const Textarea = ({ label, name, placeholder }) => {
     return (
 
-        <div>
+
+        <TextareaStyle>
 
             <label htmlFor="">{label}</label>
 
-            <textarea name={name} id=""></textarea>
-        </div>
+            <textarea name={name} placeholder={placeholder}></textarea>
+        </TextareaStyle>
+
 
     );
 }

@@ -25,9 +25,6 @@ const Header = ({toggleTheme, theme}) => {
                 Contact Me
             </button>
 
-
-
-
             <div className="theme" onClick={toggleTheme}>
                 {
                     

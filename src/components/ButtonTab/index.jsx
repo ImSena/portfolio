@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ButtonTab = ({title})=> {
+const ButtonTab = ({title, active})=> {
   return (
     <>
-        <button>
+        <button className={active ? 'active' : ''}>
             {title}
         </button>    
     </>

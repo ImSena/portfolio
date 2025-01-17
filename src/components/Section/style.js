@@ -16,7 +16,9 @@ const SectionStyled = styled.section`
     padding: 0 15px;
 
     p{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        color: ${(props) => props.theme.paragraph};
+        font-weight: 400;
     }
 `;
 

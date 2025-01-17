@@ -1,16 +1,17 @@
 import React from "react";
+import InputStyle from "./style";
 
-const Input = ({label, type = 'text', input})=>{
-    return(
-        <div>
+const Input = ({ label, type = 'text', input }) => {
+    return (
+        <InputStyle>
             <label htmlFor="">{label}</label>
-            <input 
-                type={type} 
-                name={input.name} 
+            <input
+                type={type}
+                name={input.name}
                 placeholder={input.placeholder}
                 required
             />
-        </div>
+        </InputStyle>
     )
 }
 

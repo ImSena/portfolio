@@ -12,7 +12,8 @@ const ButtonStyle = styled.div`
     button{
         font-size: 1rem;
         background-color: transparent;
-        border-color: #4FC3F7;
+        border-color: ${(props) => props.theme.buttonCta.border};
+        color: ${(props) => props.banner ? props.theme.buttonCta.colorBanner : props.theme.buttonCta.color};
         padding: 1rem 2rem;
         border-radius: 75px;
     }

@@ -23,7 +23,7 @@ const Banner = () => {
                     </p>
                 </div>
 
-                <Button title={"Contact Me"} />
+                <Button banner={true} title={"Contact Me"} />
             </BannerStyle>
         </Section>
     )

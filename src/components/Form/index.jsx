@@ -1,50 +1,45 @@
 import React from "react";
 import Title from "../Title";
 import Input from "../Input";
-import Select from "../Select";
 import Textarea from "../Textarea";
 import Section from "../Section";
+import FormStyle from "./style";
 
-const Form = ()=>{
+const Form = () => {
 
-    const service = [
-        "Job",
-        "Coop",
-        "Project"
-    ]
-
-    return(
+    return (
         <Section>
-            <Title title={"Get In Touch"} subtitle={"Lets work!"}/>
+            <Title title={"Get In Touch"} subtitle={"Lets work!"} />
 
-            <form>
-                <Input 
-                    label={"Name"} 
-                    input={{name: "name", placeholder: "Ex: João Silva" }}
+            <FormStyle>
+                <Input
+                    label={"Name"}
+                    input={{ name: "name", placeholder: "Ex: João Silva" }}
                 />
-                <Input 
+                <Input
                     label={"Email"}
-                    type="email" 
-                    input={{name: "email", placeholder: "example@email.com" }}
+                    type="email"
+                    input={{ name: "email", placeholder: "example@email.com" }}
                 />
-                
-                <Select 
+
+                <Input
                     label={"Subject"}
                     name={"subject"}
-                    option={service}
+                    input={{ name: "subject", placeholder: "Ex: Work" }}
                 />
 
-                <Textarea 
+                <Textarea
                     label={"Message"}
                     name={"message"}
+                    placeholder={"Ex: I Want to Work with you!"}
                 />
 
-                <div>
-                    <button>
-                        Get In Touch
-                    </button>
-                </div>
-            </form>
+
+                <button>
+                    Get In Touch
+                </button>
+
+            </FormStyle>
         </Section>
     )
 }
