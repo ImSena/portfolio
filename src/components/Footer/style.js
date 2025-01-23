@@ -19,9 +19,11 @@ const FooterStyle = styled.footer`
         font-size: 1.5rem;
         padding: 1rem;
         display: flex;
-        border: 1px solid white;
+        border: 1px solid ${(props)=>props.theme.footer.color};
         justify-content: space-around;
         align-items: center;
+        gap: 1rem;
+        border-radius: 1rem;
    }
 
    .top{
@@ -30,11 +32,12 @@ const FooterStyle = styled.footer`
     justify-content: space-between;
     width: 100%;
     padding: 2rem 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid ${(props)=>props.theme.footer.color};
    }
 
    .work{
         font-size: 4rem;
+        color: ${(props)=>props.theme.footer.title}
    }
 
    .bottom{

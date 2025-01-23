@@ -10,7 +10,8 @@ export const darkTheme = {
         button: {
             border: "#4fc3f7",
             color: "#ffffff"
-        }
+        },
+        background: '#242424'
     },
     banner: {
         paragraph: "#e1e1e1"
@@ -35,6 +36,19 @@ export const darkTheme = {
         color: "#a9a9a9",
         colorActive: "#f5f5f5",
         background: "#484e53"
+    },
+    form:{
+        border: "#D6DDED",
+        label: "#FFFFFF",
+        placeholder: "#8987A1",
+        button: {
+            background: "#FFFFFF",
+            color: "#000"
+        }
+    },
+    footer: {
+        title: "#DEDEDE",
+        color: "#A9A9A9",
     }
 };
 
@@ -50,7 +64,8 @@ export const lightTheme = {
         button: {
             border: "#484e53",
             color: "#484e53"
-        }
+        },
+        background: '#e1e1ff'
     },
     banner: {
         paragraph: "#484e53"
@@ -76,5 +91,19 @@ export const lightTheme = {
         color: "#484e53",
         colorActive: "#f5f5f5",
         background: "#484e53"
+    },
+    form:{
+        border: "#484E53",
+        label: "#282938",
+        placeholder: "#8987A1",
+        button: {
+            background: "#484E53",
+            color: "#fff"
+        }
+    },
+    footer: {
+        title: "#282938",
+        color: "#484E53",
     }
 };
+ 

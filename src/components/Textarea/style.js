@@ -20,15 +20,15 @@ const TextareaStyle = styled.div`
     font-size:1.1rem;
     padding-left: 1rem;
     padding-top: 1rem;
-    border: 1px solid #D6DDED;
+    border: 1px solid ${(props)=>props.theme.form.border};
     background-color: transparent;
-    color: #e6e6e6;
+    color: ${(props)=>props.theme.form.label};
     height: 10rem;
     resize: none;
     font-family: 'Inter', sans-serif;
 
     &::placeholder{
-        color: #8987A1;
+        color: ${(props)=>props.theme.form.placeholder};
     }
    }
 `;

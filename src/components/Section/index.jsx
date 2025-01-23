@@ -1,12 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import SectionStyled from "./style";
 
-const Section = ({children})=>{
-    return(
-        <SectionStyled>
-            {children}
-        </SectionStyled>
-    )
-}
+const Section = forwardRef(({ children, id }, ref) => {
+    return (
+      <SectionStyled id={id} ref={ref}>
+        {children}
+      </SectionStyled>
+    );
+});
 
 export default Section;

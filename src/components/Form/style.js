@@ -18,8 +18,8 @@ const FormStyle = styled.div`
         font-weight: 900;
         border-radius: 10px;
         height: 62px;
-        background-color: #fff;
-        color: black;
+        background-color: ${(props)=>props.theme.form.button.background};
+        color: ${(props)=>props.theme.form.button.color};
     }
 `;
 

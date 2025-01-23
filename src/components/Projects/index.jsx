@@ -1,14 +1,14 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import Title from "../Title";
 import TabProjects from "../TabProjects";
 import CardProjects from "../CardProjects";
 import Section from "../Section";
 import ContainerProjects from "./style";
 
-const Projects = () => {
+const Projects = forwardRef(({ id }, ref) => {
 
     return (
-        <Section>
+        <Section id={id} ref={ref}>
             <Title title={"Projects"} subtitle={"Some of my Work"} />
 
             <TabProjects />
@@ -61,6 +61,6 @@ const Projects = () => {
         </Section>
     )
 
-}
+});
 
 export default Projects;

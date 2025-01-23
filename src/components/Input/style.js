@@ -12,6 +12,7 @@ const InputStyle = styled.div`
 
    label{
     font-weight: bold;
+    color: ${(props)=>props.theme.form.label};
    }
 
    input{
@@ -20,12 +21,12 @@ const InputStyle = styled.div`
     height: 70px;
     font-size:1.1rem;
     padding-left: 1rem;
-    border: 1px solid #D6DDED;
+    border: 1px solid ${(props)=>props.theme.form.border};
     background-color: transparent;
-    color: #e6e6e6;
+    color: ${(props)=>props.theme.form.label};
 
     &::placeholder{
-        color: #8987A1;
+        color: ${(props)=>props.theme.form.placeholder};
     }
    }
 `;
