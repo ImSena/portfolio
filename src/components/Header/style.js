@@ -47,6 +47,13 @@ const HeaderStyle = styled.header`
     }
   }
 
+  .actions{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+
   button{
     border-color: ${(props) => props.theme.header.button.border};
     color: ${(props) => props.theme.header.button.color};

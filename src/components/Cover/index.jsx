@@ -2,9 +2,9 @@ import React from "react";
 import { FaArrowDown } from "react-icons/fa6";
 import CoverStyle from "./style"; // Estilos do Cover
 
-const Cover = ({ $hideCover }) => {
+const Cover = ({activeCover}) => {
   return (
-    <CoverStyle $hideCover={$hideCover}>
+    <CoverStyle activeCover={activeCover}>
       <div className="banner-content">
         <h1>Seja Muito Bem-Vindo</h1>
         <p>Role para baixo para começar</p>

@@ -1,62 +1,53 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useState } from "react";
 import Title from "../Title";
 import TabProjects from "../TabProjects";
 import CardProjects from "../CardProjects";
 import Section from "../Section";
 import ContainerProjects from "./style";
+import projects from "../../Projects/projects";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Projects = forwardRef(({ id }, ref) => {
 
+    const {language} = useLanguage()
+
+    const content = {
+        pt: {
+            title: "Projetos",
+            subtitle: "Alguns dos meus trabalhos"
+        },
+        en: {
+            title: "Projects",
+            subtitle: "Some of my Work"
+        }
+    }
+
+    const [activeTab, setActiveTab] = useState("All");
+
+    const tabs = ["All", ...Object.keys(projects)];
+
+    const filteredProjects = activeTab === "All" ?
+        Object.values(projects).flat() :
+        projects[activeTab];
+
     return (
         <Section id={id} ref={ref}>
-            <Title title={"Projects"} subtitle={"Some of my Work"} />
+            <Title title={content[language].title} subtitle={content[language].subtitle} />
 
-            <TabProjects />
+            <TabProjects tabs={tabs} setActiveTab={setActiveTab} activeTab={activeTab} />
 
             <ContainerProjects>
-
-                <CardProjects
-                    image={{ path: "https://placehold.co/354x198", title: "Title", alt: "Alt" }}
-                    title={"Name Project"}
-                    content={"Content"}
-                    path={"/project"}
-                />
-
-                <CardProjects
-                    image={{ path: "https://placehold.co/354x198", title: "Title", alt: "Alt" }}
-                    title={"Name Project"}
-                    content={"Content"}
-                    path={"/project"}
-                />
-
-                <CardProjects
-                    image={{ path: "https://placehold.co/354x198", title: "Title", alt: "Alt" }}
-                    title={"Name Project"}
-                    content={"Content"}
-                    path={"/project"}
-                />
-
-                <CardProjects
-                    image={{ path: "https://placehold.co/354x198", title: "Title", alt: "Alt" }}
-                    title={"Name Project"}
-                    content={"Content"}
-                    path={"/project"}
-                />
-
-                <CardProjects
-                    image={{ path: "https://placehold.co/354x198", title: "Title", alt: "Alt" }}
-                    title={"Name Project"}
-                    content={"Content"}
-                    path={"/project"}
-                />
-
-                <CardProjects
-                    image={{ path: "https://placehold.co/354x198", title: "Title", alt: "Alt" }}
-                    title={"Name Project"}
-                    content={"Content"}
-                    path={"/project"}
-                />
-
+                {
+                    filteredProjects.map((project) => (
+                        <CardProjects
+                            key={project.id}
+                            image={project.img}
+                            title={project.title[language]}
+                            content={project.content[language]}
+                            path={`/project/${project.id}`}
+                        />
+                    ))
+                }
             </ContainerProjects>
         </Section>
     )

@@ -2,14 +2,19 @@ import React from 'react';
 import ButtonTab from '../ButtonTab';
 import TabStyle from './style';
 
-const TabProjects = () => {
+const TabProjects = ({tabs, setActiveTab, activeTab}) => {
   return (
     <TabStyle>
-      <ButtonTab active={true} title={"Front-End"} />
-      <ButtonTab title={"Back-End"} />
-      <ButtonTab title={"Database"} />
-      <ButtonTab title={"Iot"} />
-      <ButtonTab title={"Desing UI/UX"} />
+      {
+        tabs.map((tab)=>(
+          <ButtonTab 
+            key={tab}
+            active={tab === activeTab} 
+            title={tab} 
+            setActive={()=> setActiveTab(tab)}
+            />
+        ))
+      }
     </TabStyle>
   );
 }

@@ -8,7 +8,7 @@ const BannerStyle = styled.section`
     gap: 2rem;
     justify-content: center;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 10rem;
     margin-bottom:  1rem;
     max-width: 1000px;
 

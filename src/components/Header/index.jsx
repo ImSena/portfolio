@@ -33,23 +33,25 @@ const Header = ({ toggleTheme, theme, sections, scroll, activeSection }) => {
 
 
             <button onClick={() => scroll('contact')}>
-                {language == 'en' ? 'Contact Me': "Contate-me"}
+                {language == 'en' ? 'Contact Me' : "Contate-me"}
             </button>
 
-            <div className="language" onClick={toggleLanguage}>
-                <IoLanguageOutline />
-                {language === "en" ? "PT" : "EN"}
-            </div>
+            <div className="actions">
+                <div className="language" onClick={toggleLanguage}>
+                    <IoLanguageOutline />
+                    {language === "pt" ? "PT" : "EN"}
+                </div>
 
-            <div className="theme" onClick={toggleTheme}>
-                {
+                <div className="theme" onClick={toggleTheme}>
+                    {
 
-                    theme == "dark" ? (
-                        <CiBrightnessDown size={30} />
-                    ) : (
-                        <CiDark size={30} />
-                    )
-                }
+                        theme == "dark" ? (
+                            <CiBrightnessDown size={30} />
+                        ) : (
+                            <CiDark size={30} />
+                        )
+                    }
+                </div>
             </div>
         </HeaderStyle>
     );
