@@ -23,12 +23,15 @@ const Projects = forwardRef(({ id }, ref) => {
     }
 
     const [activeTab, setActiveTab] = useState("All");
+    const [visibleCount, setVisibleCount] = useState(6);
 
     const tabs = ["All", ...Object.keys(projects)];
 
     const filteredProjects = activeTab === "All" ?
         Object.values(projects).flat() :
         projects[activeTab];
+
+    const visibleProjects = filteredProjects.slice(0, visibleCount);
 
     return (
         <Section id={id} ref={ref}>
@@ -38,7 +41,7 @@ const Projects = forwardRef(({ id }, ref) => {
 
             <ContainerProjects>
                 {
-                    filteredProjects.map((project) => (
+                    visibleProjects.map((project) => (
                         <CardProjects
                             key={project.id}
                             image={project.img}
@@ -49,6 +52,12 @@ const Projects = forwardRef(({ id }, ref) => {
                     ))
                 }
             </ContainerProjects>
+
+            {visibleCount < filteredProjects.length &&(
+                <button onClick={()=> setVisibleCount(filteredProjects.length)}>
+                    Ver mais
+                </button>
+            )}
         </Section>
     )
 

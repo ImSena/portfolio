@@ -21,6 +21,10 @@ const FormStyle = styled.div`
         background-color: ${(props)=>props.theme.form.button.background};
         color: ${(props)=>props.theme.form.button.color};
     }
+
+    @media (max-width: 768px) {
+        width: 80%;
+    }
 `;
 
 export default FormStyle;

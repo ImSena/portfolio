@@ -4,7 +4,7 @@ import CardSkillsStyled from "./style";
 const CardSkills = ({ title, content, img = false, icone }) => {
     return (
         <CardSkillsStyled img={img} className={`${img ? "highlight" : ""}`}>
-            <div>
+            <div className="content">
                 <div className="icon">
                     {icone}
                 </div>

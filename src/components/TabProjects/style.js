@@ -5,6 +5,7 @@ import styled from "styled-components";
 const TabStyle = styled.div`
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -23,6 +24,11 @@ const TabStyle = styled.div`
             color: ${(props) => props.theme.buttonTab.colorActive};
             background-color: ${(props) => props.theme.buttonTab.background};
         }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        gap: 1rem;
     }
 `;
 
