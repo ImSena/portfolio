@@ -19,6 +19,11 @@ const SectionStyled = styled.section`
         color: ${(props) => props.theme.paragraph};
         font-weight: 400;
     }
+
+    @media (max-width: 768px) {
+        padding: 0 2rem;
+        margin-bottom: 8rem;
+    }
 `;
 
 export default SectionStyled;

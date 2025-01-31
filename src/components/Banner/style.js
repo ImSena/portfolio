@@ -37,6 +37,10 @@ const BannerStyle = styled.section`
     p{
         font-size: 1.25rem;
     }
+
+    @media (max-width: 768px) {
+        margin-top: 6rem;
+    }
 `;
 
 export default BannerStyle;

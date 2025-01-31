@@ -1,9 +1,13 @@
 import React from 'react';
 
-const ButtonTab = ({title, active, setActive})=> {
+const ButtonTab = ({title, active, setActive, setVisibleCount})=> {
   return (
     <>
-        <button className={active ? 'active' : ''} onClick={()=> setActive()}>
+        <button className={active ? 'active' : ''} onClick={()=>{ 
+          setActive();
+          setVisibleCount(6);
+
+        }}>
             {title}
         </button>    
     </>

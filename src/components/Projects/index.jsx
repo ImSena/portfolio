@@ -9,7 +9,7 @@ import { useLanguage } from "../../contexts/LanguageContext";
 
 const Projects = forwardRef(({ id }, ref) => {
 
-    const {language} = useLanguage()
+    const { language } = useLanguage()
 
     const content = {
         pt: {
@@ -37,7 +37,7 @@ const Projects = forwardRef(({ id }, ref) => {
         <Section id={id} ref={ref}>
             <Title title={content[language].title} subtitle={content[language].subtitle} />
 
-            <TabProjects tabs={tabs} setActiveTab={setActiveTab} activeTab={activeTab} />
+            <TabProjects tabs={tabs} setActiveTab={setActiveTab} activeTab={activeTab} setVisibleCount={setVisibleCount} />
 
             <ContainerProjects>
                 {
@@ -53,11 +53,17 @@ const Projects = forwardRef(({ id }, ref) => {
                 }
             </ContainerProjects>
 
-            {visibleCount < filteredProjects.length &&(
-                <button onClick={()=> setVisibleCount(filteredProjects.length)}>
+            {visibleCount < filteredProjects.length ? (
+                <button onClick={() => setVisibleCount(filteredProjects.length)}>
                     Ver mais
                 </button>
-            )}
+            ) :
+                visibleCount > 6 && (
+                    <button onClick={() => setVisibleCount(6)}>
+                        Ver menos
+                    </button>
+                )
+            }
         </Section>
     )
 

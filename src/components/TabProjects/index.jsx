@@ -2,7 +2,7 @@ import React from 'react';
 import ButtonTab from '../ButtonTab';
 import TabStyle from './style';
 
-const TabProjects = ({tabs, setActiveTab, activeTab}) => {
+const TabProjects = ({tabs, setActiveTab, activeTab, setVisibleCount}) => {
   return (
     <TabStyle>
       {
@@ -12,6 +12,7 @@ const TabProjects = ({tabs, setActiveTab, activeTab}) => {
             active={tab === activeTab} 
             title={tab} 
             setActive={()=> setActiveTab(tab)}
+            setVisibleCount={setVisibleCount}
             />
         ))
       }

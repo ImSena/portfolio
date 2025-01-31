@@ -11,7 +11,11 @@ export const darkTheme = {
             border: "#4fc3f7",
             color: "#ffffff"
         },
-        background: '#242424'
+        background: '#242424',
+        mobile:{
+            background: 'rgba(20, 20, 20, 0.95)',
+            backdrop: 'rgba(0, 0, 0, 0.4)'
+        }
     },
     banner: {
         paragraph: "#e1e1e1"
@@ -65,7 +69,11 @@ export const lightTheme = {
             border: "#484e53",
             color: "#484e53"
         },
-        background: '#e1e1ff'
+        background: '#e1e1ff',
+        mobile:{
+            background: '#e1e1ff',
+            backdrop: 'rgba(255, 255, 255, 0.4)',
+        }
     },
     banner: {
         paragraph: "#484e53"
