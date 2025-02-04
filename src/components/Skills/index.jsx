@@ -46,7 +46,7 @@ const Skills = forwardRef(({ id }, ref) => {
 
                 <CardSkills icone={<SiExpo />} title={"Mobile"} content={content[language].mobile} />
 
-                <CardSkills icone={<FaPhp/>} title={"Backend"} content={content[language].backend} img={"https://placehold.co/234x218"}/>
+                <CardSkills icone={<FaPhp/>} title={"Backend"} content={content[language].backend} img={"/backend.webp"}/>
 
                 <CardSkills icone={<FaFigma/>} title={"Design UI/UX"} content={content[language].design} />
             </ContainerSkills>

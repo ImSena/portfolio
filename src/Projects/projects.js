@@ -3,8 +3,8 @@ const projects = {
         {
             id: 1,
             title: {
-                pt: "Projeto 1",
-                en: "Project 1"
+                pt: "Saber em Sena",
+                en: "Saber em Sena"
             },
             img: {
                 path: "https://placehold.co/354x198",
@@ -12,8 +12,8 @@ const projects = {
                 title: ""
             },
             content: {
-                pt: "Descrição sobre",
-                en: "Description about"
+                pt: "Um gerenciador de blog feito com node",
+                en: "A blog manager made with Node."
             }
         },
         { 
@@ -109,8 +109,8 @@ const projects = {
         { 
             id: 7, 
             title: {
-                pt: "Projeto 1",
-                en: "Project 1"
+                pt: "Calculadora em Java GUI",
+                en: "Java Calculator with GUI"
             },
             img: {
                 path: "https://placehold.co/354x198",
