@@ -1,25 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Section from "../../components/Section";
 import SliderProject from "../../components/SliderProject/SliderProject";
 import ProjectsComponent from "../../components/Projects";
 import Form from "../../components/Form"
 import Title from "../../components/Title";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import { BsGithub } from "react-icons/bs";
 import { MdRocketLaunch } from "react-icons/md";
 import { ButtonCta } from "./style";
 
+import project from "../../Projects/projects";
+
 
 const Projects = () => {
     const { pathname } = useLocation();
+    const {id} = useParams();
+    const [projectData, setProjectData] = useState({});
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        setProjectData(Object.values(project).flat().find(p => p.id === Number(id)));
     }, [pathname]);
 
     return (
         <>
-            <SliderProject />
+            <SliderProject slider={projectData.img.slider}/>
 
             <Section>
 

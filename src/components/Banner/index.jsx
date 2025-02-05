@@ -28,7 +28,7 @@ const Banner = forwardRef(({ id }, ref) => {
             <BannerStyle>
                 <div>
                     <div className="perfil">
-                        <img src="https://placehold.co/202x197" alt="Bruno's Image" />
+                        <img src="/ImSena.png" width="340px" alt="Bruno's Image" />
                     </div>
                     <div>
                         <h2>{content[language].h2}</h2>

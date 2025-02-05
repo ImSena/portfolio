@@ -8,7 +8,7 @@ const BannerStyle = styled.section`
     gap: 2rem;
     justify-content: center;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-bottom:  1rem;
     max-width: 1000px;
 
@@ -16,6 +16,8 @@ const BannerStyle = styled.section`
         margin: 1rem 0;
         img{
             border-radius: 100%;
+            width: 340px;
+            box-shadow: 0px 1px 10px #00000066;
         }
     }
 
@@ -40,7 +42,20 @@ const BannerStyle = styled.section`
 
     @media (max-width: 768px) {
         margin-top: 6rem;
+
+        h2{
+            font-size: 3.0625rem;
+        } 
+
+        .perfil{
+            img{
+                width: 200px;
+            }
+        }
+
+  
     }
+
 `;
 
 export default BannerStyle;

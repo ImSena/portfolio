@@ -113,14 +113,22 @@ const projects = {
                 en: "Java Calculator with GUI"
             },
             img: {
-                path: "https://placehold.co/354x198",
+                thumbnail: "/projects/calculatorJava/main.webp",
                 alt: "",
-                title: ""
+                title: "",
+
+                slider:{
+                    slider1: "/projects/calculatorJava/slider1.webp",
+                    slider2: "/projects/calculatorJava/slider2.webp",
+                    slider3: "/projects/calculatorJava/slider3.webp"
+                }
             },
             content: {
-                pt: "Descrição sobre",
-                en: "Description about"
-            }
+                pt: "Calculadora com GUI feita em Java utilizando componentes visuais para uma melhor usabilidade",
+                en: "Calculator with GUI made in Java using visual components for better usability"
+            },
+            deploy: false,
+            github: "https://github.com/ImSena/CalculadoraJava"
         }
     ]
 };

@@ -8,7 +8,7 @@ const CardProjects = ({ image, title, content, path }) => {
 
         <CardStyle>
             <div>
-                <img src={image.path} alt={image.alt} title={image.title} />
+                <img src={image.thumbnail} alt={image.alt} title={image.title} />
             </div>
 
             <div className='body'>

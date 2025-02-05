@@ -4,14 +4,6 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import styled from 'styled-components';
 
-const movies = [
-  { title: "Justice League", image: "https://placehold.co/1920x350", description: "Um grupo de heróis se une para salvar o mundo." },
-  { title: "Captain America", image: "https://placehold.co/1920x350", description: "A história de Steve Rogers." },
-  { title: "Spider-Man", image: "https://placehold.co/1920x350", description: "Peter Parker enfrenta novos desafios." },
-  { title: "Thor", image: "https://placehold.co/1920x350", description: "O deus do trovão enfrenta novas ameaças." },
-  { title: "Black Panther", image: "https://placehold.co/1920x350", description: "O rei de Wakanda luta para proteger seu povo." },
-];
-
 const SlideImage = styled.img`
   width: 100%;
   height: 100%;
@@ -35,19 +27,20 @@ const SwiperWrapper = styled.div`
   }
 `;
 
-const SliderProject = () => {
+const SliderProject = ({slider}) => {
+  console.log(slider);
   return (
     <Swiper
       slidesPerView={1}
       loop={true}
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
+      autoplay={{ delay: 4500, disableOnInteraction: false }}
       modules={[Autoplay]}
       style={{ width: '100%', height: '100%' }}
     >
-      {movies.map((movie, index) => (
+      {Object.values(slider).map((slide, index) => (
         <SwiperSlide key={index} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%' }}>
           <SwiperWrapper>
-            <SlideImage src={movie.image} alt={movie.title} />
+            <SlideImage src={slide} alt={"Imagem relativa ao projeto"} />
           </SwiperWrapper>
         </SwiperSlide>
       ))}
