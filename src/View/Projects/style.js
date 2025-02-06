@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const ButtonCta = styled.a`
-    font-size: 1rem; /* Ajusta o tamanho da fonte para um valor menor */
-    padding: 1rem 1.8rem; /* Reduz o padding vertical e horizontal */
+    font-size: 1rem; 
+    padding: 1rem 1.8rem;
     display: inline-flex;
     border: 2px solid ${(props) => props.theme.footer.color};
     color: ${(props) => props.theme.footer.title};
     justify-content: center;
     align-items: center;
-    gap: 0.8rem; /* Diminui o espaço entre o ícone e o texto */
-    border-radius: 0.6rem; /* Ajusta o raio do border-radius */
+    gap: 0.8rem; 
+    border-radius: 0.6rem; 
     font-weight: 500;
     transition: all 0.2s ease-in-out;
 
@@ -19,7 +19,13 @@ export const ButtonCta = styled.a`
     }
 
     svg {
-        width: 1.6rem; /* Ajusta o tamanho do ícone */
+        width: 1.6rem;
         height: 1.6rem;
+    }
+`;
+
+export const ContainerParagraph = styled.div`
+    p{
+        margin-bottom: 2rem;
     }
 `;

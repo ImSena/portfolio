@@ -106,7 +106,7 @@ const HeaderStyle = styled.header`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1440px) {
     padding: 2rem 7rem;
     .mobile-menu{
 
