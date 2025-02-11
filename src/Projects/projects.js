@@ -44,7 +44,7 @@ const projects = {
     ],
     "Front-End": [
         {
-            id: 1,
+            id: 2,
             title: {
                 pt: "CapitaLearn",
                 en: "CapitaLearn"
@@ -104,7 +104,7 @@ const projects = {
                 en: "Let's Sign"
             },
             subtitle:{
-                pt: "Um gerenciador de blog feito com Node",
+                pt: "Soluções ",
                 en: "A blog manager made with Node."
             },
             img: {
