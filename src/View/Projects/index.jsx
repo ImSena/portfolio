@@ -16,21 +16,21 @@ import { useLanguage } from "../../contexts/LanguageContext";
 const Projects = () => {
     const { language } = useLanguage();
     const { pathname } = useLocation();
-    const { id } = useParams();
+    const { slug } = useParams();
     const [projectData, setProjectData] = useState(null);
 
     useEffect(() => {
         window.scrollTo(0, 0);
         const foundProject = Object.values(project)
             .flat()
-            .find(p => p.id === Number(id));
+            .find(p => p.slug === slug );
 
         if (foundProject) {
             setProjectData(foundProject);
         } else {
             setProjectData(null);
         }
-    }, [pathname, id]);
+    }, [pathname, slug]);
 
     if (!projectData) return <p>Projeto não encontrado.</p>;
 

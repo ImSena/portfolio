@@ -1,12 +1,12 @@
 const projects = {
     "Back-End": [
         {
-            id: 1,
+            slug: "saber-em-sena",
             title: {
                 pt: "Saber em Sena",
                 en: "Saber em Sena"
             },
-            subtitle:{
+            subtitle: {
                 pt: "Um gerenciador de blog feito com Node",
                 en: "A blog manager made with Node."
             },
@@ -39,26 +39,216 @@ const projects = {
             },
             deploy: false,
             github: "https://github.com/ImSena/SaberEmSena"
-        }
-        
-    ],
-    "Front-End": [
+        },
         {
-            id: 2,
+            slug: "capita-learn",
             title: {
                 pt: "CapitaLearn",
                 en: "CapitaLearn"
             },
+            subtitle: {
+                pt: "Sistema para auxiliar no controle financeiro pessoal",
+                en: "A system to help with personal financial control"
+            },
             img: {
-                path: "https://placehold.co/354x198",
-                alt: "",
-                title: ""
+                thumbnail: "/projects/capita-learn/main.webp",
+                alt: "Imagem representando o projeto",
+                title: "Imagem representando o projeto",
+                slider: {
+                    slider1: "/projects/capita-learn/slider1.webp",
+                    slider2: "/projects/capita-learn/slider2.webp",
+                    slider3: "/projects/capita-learn/slider3.webp",
+                }
             },
             content: {
-                pt: "Um gerenciador de blog feito com node",
-                en: "A blog manager made with Node."
-            }
+                pt: "Uma plataforma completa para gestão financeira pessoal.",
+                en: "A complete platform for personal financial management."
+            },
+            paragraph: {
+                pt: [
+                    "O <strong>CapitaLearn</strong> nasceu com o objetivo de ajudar as pessoas a gerenciar melhor suas finanças pessoais e evitar a inadimplência causada pela má administração do dinheiro. Desenvolvido como projeto acadêmico na FIAP, a plataforma permite adicionar e remover saldos, registrar pagamentos recorrentes e visualizar relatórios detalhados de gastos e recebimentos.",
+                    "Utilizando Java EE (Jakarta) com Servlets e JSP, todo o projeto foi desenvolvido sem frameworks externos, exigindo um esforço maior para aplicar boas práticas como injeção de dependências e organização modular. Um dos maiores desafios foi a integração com o banco de dados Oracle, onde foi necessário modelar com eficiência e manter a arquitetura limpa.",
+                    "Uma das grandes conquistas no <strong>CapitaLearn</strong> foi a implementação de uma arquitetura sólida e bem organizada, com classes base para controller, service e model. Essa estrutura garantiu legibilidade e escalabilidade ao sistema, e me rendeu nota máxima no projeto final da disciplina.",
+                    "Esse projeto foi um marco na minha evolução como desenvolvedor, principalmente pelo cuidado com a arquitetura e pelo feedback positivo que recebi. Acesse o repositório no GitHub para conferir como tudo foi feito!"
+                ],
+                en: [
+                    "<strong>CapitaLearn</strong> was created to help people better manage their personal finances and avoid debt caused by poor money management. Developed as an academic project at FIAP, the platform allows users to add and remove balances, register recurring payments, and view detailed reports of expenses and income.",
+                    "Using Java EE (Jakarta) with Servlets and JSP, the entire system was built without external frameworks, requiring extra effort to apply best practices like manual dependency injection and modular organization. One of the biggest challenges was integrating with the Oracle database while maintaining a clean and efficient architecture.",
+                    "One of the key achievements in <strong>CapitaLearn</strong> was implementing a solid and well-organized architecture, with base classes for controller, service, and model layers. This structure ensured readability and scalability, and earned me top marks in the final evaluation.",
+                    "This project marked a significant step in my evolution as a developer, especially for the attention to architecture and the positive feedback I received. Check out the GitHub repository to see how it was built!"
+                ]
+            },
+            deploy: false,
+            github: "https://github.com/ImSena/capita-learn-web"
         },
+
+    ],
+    "Front-End": [
+        {
+            slug: "jogo-da-velha3",
+            title: {
+                pt: "Jogo da Velha3",
+                en: "Jogo da Velha3"
+            },
+            subtitle: {
+                pt: "Uma versão divertida do clássico jogo da velha",
+                en: "A fun version of the classic Tic-Tac-Toe game"
+            },
+            img: {
+                thumbnail: "/projects/jogoDaVelha3/main.webp",
+                alt: "Imagem representando o projeto",
+                title: "Imagem representando o projeto",
+                slider: {
+                    slider1: "/projects/jogoDaVelha3/slider1.webp",
+                    slider2: "/projects/jogoDaVelha3/slider2.webp",
+                    slider3: "/projects/jogoDaVelha3/slider3.webp",
+                }
+            },
+            content: {
+                pt: "Um jogo web clássico criado como desafio pessoal.",
+                en: "A classic web game built as a personal challenge."
+            },
+            paragraph: {
+                pt: [
+                    "O <strong>Jogo da Velha3</strong> nasceu de forma espontânea após assistir a um vídeo no Instagram sobre uma versão diferente do tradicional jogo da velha. Foi aí que decidi encarar o desafio de criar minha própria versão web do jogo usando apenas HTML, CSS e JavaScript puro.",
+                    "O jogo permite partidas entre dois jogadores no mesmo dispositivo, mantendo um placar atualizado a cada rodada. A maior dificuldade, sem dúvidas, foi implementar a lógica para verificar as condições de vitória, empate e controle do placar — tudo isso manipulando o DOM diretamente.",
+                    "Apesar da simplicidade, o projeto foi uma ótima forma de consolidar conhecimentos em JavaScript e lógica de programação. Criado inicialmente como um desafio pessoal e por pura diversão, ele acabou fazendo sucesso na escola na época!",
+                    "Se quiser jogar e ver como ficou, o jogo está disponível online!"
+                ],
+                en: [
+                    "<strong>Jogo da Velha3</strong> was born spontaneously after I watched a video on Instagram about a different version of the classic Tic-Tac-Toe game. That’s when I decided to take on the challenge of creating my own web version using only HTML, CSS, and plain JavaScript.",
+                    "The game supports two players on the same device and keeps track of the score after each round. The biggest challenge was definitely implementing the logic to check for wins, draws, and managing the scoreboard — all through direct DOM manipulation.",
+                    "Even though it’s a simple project, it was a great way to reinforce my JavaScript and logic skills. Originally created for fun and as a personal challenge, it ended up being a hit at school at the time!",
+                    "If you want to try it out and play, the game is available online!"
+                ]
+            },
+            deploy: "https://imsena.github.io/JogoDaVelha3",
+            github: "https://github.com/ImSena/JogoDaVelha3",
+        },
+        {
+            slug: "gerador-de-senha",
+            title: {
+                pt: "Gerador de Senha",
+                en: "Password Generator"
+            },
+            subtitle: {
+                pt: "Projeto de aprendizado com HTML, CSS e JS",
+                en: "Learning project using HTML, CSS, and JS"
+            },
+            img: {
+                thumbnail: "/projects/gerarSenha/main.webp",
+                alt: "Imagem representando o projeto",
+                title: "Imagem representando o projeto",
+                slider: {
+                    slider1: "/projects/gerarSenha/slider1.webp",
+                    slider2: "/projects/gerarSenha/slider2.webp",
+                    slider3: "/projects/gerarSenha/slider3.webp",
+                }
+            },
+            content: {
+                pt: "Um gerador de senha feito nos primeiros passos com web.",
+                en: "A password generator built during my early web learning."
+            },
+            paragraph: {
+                pt: [
+                    "O <strong>Gerador de Senha</strong> foi um dos primeiros projetos que desenvolvi quando comecei a aprender HTML, CSS e JavaScript. Ele surgiu como um exercício prático para entender como funcionam os elementos básicos da web e a lógica por trás da manipulação de dados no navegador.",
+                    "O usuário informa o tamanho desejado da senha, e o sistema gera uma combinação aleatória de caracteres especiais com base nesse número. Na época, o maior desafio foi criar corretamente a lógica de geração da string, algo que exigiu explorar métodos do JavaScript que eu ainda não conhecia.",
+                    "Apesar da simplicidade, esse projeto foi essencial para consolidar meus conhecimentos iniciais em JavaScript, especialmente na manipulação do DOM, no uso de eventos e na criação de funções reutilizáveis.",
+                    "Foi um marco no meu aprendizado como desenvolvedor front-end, e ainda hoje considero esse tipo de projeto uma excelente prática para quem está começando!"
+                ],
+                en: [
+                    "<strong>Password Generator</strong> was one of the first projects I built when I started learning HTML, CSS, and JavaScript. It came up as a practical exercise to understand how basic web elements work and to apply logic directly in the browser.",
+                    "The user enters the desired password length, and the system generates a random string with special characters based on that input. At the time, the hardest part was creating the logic to build the string — which required exploring JavaScript methods I was just getting to know.",
+                    "Although simple, this project was key to solidifying my initial JavaScript knowledge, especially in DOM manipulation, event handling, and creating reusable functions.",
+                    "It marked a meaningful step in my journey as a front-end developer, and I still believe it's a great exercise for anyone starting out!"
+                ]
+            },
+            deploy: "https://imsena.github.io/gerador-de-senha",
+            github: "https://github.com/ImSena/gerador-de-senha",
+        },
+        {
+            slug: "organo",
+            title: {
+                pt: "Organo",
+                en: "Organo"
+            },
+            subtitle: {
+                pt: "Um quadro de funcionários por setor",
+                en: "A team board organized by department"
+            },
+            img: {
+                thumbnail: "/projects/organo/main.webp",
+                alt: "Imagem representando o projeto",
+                title: "Imagem representando o projeto",
+                slider: {
+                    slider1: "/projects/organo/slider1.webp",
+                    slider2: "/projects/organo/slider2.webp",
+                    slider3: "/projects/organo/slider3.webp",
+                }
+            },
+            content: {
+                pt: "Projeto React para organizar colaboradores por setor.",
+                en: "React project to organize collaborators by department."
+            },
+            paragraph: {
+                pt: [
+                    "O <strong>Organo</strong> é um projeto desenvolvido em <strong>React</strong> com o objetivo de organizar colaboradores em diferentes setores dentro de uma empresa fictícia. Nele, é possível adicionar o nome do colaborador, imagem e o setor ao qual ele pertence. O sistema exibe automaticamente cada colaborador no quadro do respectivo time.",
+                    "Esse projeto foi parte de um curso da <strong>Alura</strong> que decidi fazer para reforçar os conceitos de React que eu já havia aprendido de forma autodidata. Recomeçar pelos fundamentos foi essencial para estruturar melhor meu conhecimento e entender de forma mais sólida a lógica por trás do React.",
+                    "Um dos principais aprendizados foi a manipulação de listas com <code>map()</code>, uso de <strong>props</strong> e <strong>estados</strong>, além da componentização de forma prática. Foi uma ótima forma de revisar a tecnologia com mais clareza e organização.",
+                    "Mesmo sendo um projeto simples, o Organo representa uma etapa importante de consolidação no meu domínio do React."
+                ],
+                en: [
+                    "<strong>Organo</strong> is a project built with <strong>React</strong> that aims to organize collaborators into different departments within a fictional company. Users can add the collaborator’s name, image, and department, and the system automatically displays them in the appropriate section.",
+                    "This project was part of an <strong>Alura</strong> course I took to reinforce the React concepts I had previously learned on my own. Going back to the basics helped me strengthen my understanding and build a more solid foundation in the technology.",
+                    "One of the main takeaways was learning how to manipulate lists using <code>map()</code>, work with <strong>props</strong> and <strong>state</strong>, and apply componentization in a real project. It was a great way to revisit and solidify my knowledge of React.",
+                    "Although simple, Organo represents an important step in my React learning journey."
+                ]
+            },
+            deploy: false,
+            github: "https://github.com/ImSena/organogram"
+        },
+        {
+            slug: "letssign",
+            title: {
+                pt: "LetsSign",
+                en: "LetsSign"
+            },
+            subtitle: {
+                pt: "Proposta de validação para assinaturas eletrônicas",
+                en: "Validation proposal for electronic signatures"
+            },
+            img: {
+                thumbnail: "/projects/letsSign/main.webp",
+                alt: "Imagem representando o projeto",
+                title: "Imagem representando o projeto",
+                slider: {
+                    slider1: "/projects/letsSign/slider1.webp",
+                    slider2: "/projects/letsSign/slider2.webp",
+                    slider3: "/projects/letsSign/slider3.webp",
+                }
+            },
+            content: {
+                pt: "Protótipo de validação para assinaturas eletrônicas com tecnologias acessíveis.",
+                en: "A prototype for validating electronic signatures using accessible technologies."
+            },
+            paragraph: {
+                pt: [
+                    "O projeto <strong>LetsSign</strong> foi desenvolvido como uma proposta acadêmica em parceria com a empresa LetsSign, referência no mercado de assinaturas eletrônicas. O objetivo era explorar novas formas de validação digital utilizando tecnologias acessíveis e de baixo custo.",
+                    "A solução apresentada é um protótipo funcional que demonstra métodos alternativos de autenticação: reconhecimento facial (biometria via webcam), geolocalização do usuário e um 'token falado', onde o usuário grava sua voz para validar a identidade. Tudo isso implementado com <strong>HTML</strong>, <strong>Bootstrap</strong> e <strong>JavaScript</strong>.",
+                    "Mais do que desenvolver um sistema completo, o foco foi entender como funcionam os processos de validação em assinaturas eletrônicas e como eles podem ser inovados com criatividade e recursos simples.",
+                    "Esse projeto proporcionou uma experiência valiosa de pesquisa, prototipação e apresentação de ideias dentro de um contexto real de mercado."
+                ],
+                en: [
+                    "The <strong>LetsSign</strong> project was developed as an academic proposal in partnership with LetsSign, a leading company in the electronic signature industry. The goal was to explore new ways of digital validation using accessible and low-cost technologies.",
+                    "The proposed solution is a working prototype that showcases alternative authentication methods: facial recognition (via webcam), user geolocation, and a 'spoken token', where the user records their voice to confirm identity. All of this was implemented using <strong>HTML</strong>, <strong>Bootstrap</strong>, and <strong>JavaScript</strong>.",
+                    "Rather than building a full system, the main focus was to understand how electronic signature validation works and how it can be reimagined using simple tools and creative approaches.",
+                    "This project offered a valuable experience in research, prototyping, and presenting innovative ideas within a real-world business context."
+                ]
+            },
+            deploy: "https://imsena.github.io/letsSign---Front/",
+            github: "https://github.com/ImSena/letsSign---Front"
+        }
+
     ],
     "Database": [
         {
@@ -80,30 +270,56 @@ const projects = {
     ],
     "Mobile": [
         {
-            id: 4,
+            slug: "autasks",
             title: {
-                pt: "Projeto 1",
-                en: "Project 1"
+                pt: "Autasks",
+                en: "Autasks"
+            },
+            subtitle: {
+                pt: "Aplicativo gamificado contra a procrastinação",
+                en: "A gamified app to fight procrastination"
             },
             img: {
-                path: "https://placehold.co/354x198",
-                alt: "",
-                title: ""
+                thumbnail: "/projects/auTasks/main.webp",
+                alt: "Imagem representando o projeto",
+                title: "Imagem representando o projeto",
+                slider: {
+                    slider1: "/projects/auTasks/slider1.webp",
+                    slider2: "/projects/auTasks/slider2.webp",
+                    slider3: "/projects/auTasks/slider3.webp"
+                }
             },
             content: {
-                pt: "Descrição sobre",
-                en: "Description about"
-            }
+                pt: "Aplicativo lúdico e gamificado para ajudar a combater a procrastinação.",
+                en: "A playful and gamified app designed to help users fight procrastination."
+            },
+            paragraph: {
+                pt: [
+                    "O <strong>Autasks</strong> nasceu como uma forma criativa e divertida de ajudar as pessoas a combater a procrastinação. Desenvolvido como meu TCC no curso técnico de Desenvolvimento de Sistemas da ETEC, a proposta do aplicativo é simples, mas poderosa: um pet virtual cuja sobrevivência depende da realização das tarefas diárias do usuário.",
+                    "Utilizando <strong>React Native</strong> com <strong>Expo</strong>, <strong>Redux</strong> e <strong>Firebase</strong> para o backend, a maior dificuldade foi integrar corretamente o Firebase à aplicação mobile, já que a curva de aprendizado para esse nível técnico era desafiadora. Ainda assim, conseguimos desenvolver um app funcional, com tarefas categorizadas (como saúde, escola, família) e elementos visuais que engajam o usuário.",
+                    "Apesar de não termos aplicado padrões avançados de arquitetura, o aprendizado técnico e emocional foi enorme. Criar um aplicativo que fosse além da função prática e também envolvesse o usuário emocionalmente com um mascote virtual foi uma experiência marcante.",
+                    "O projeto foi cotado como um dos melhores da turma, e sem dúvidas marcou uma fase importante da minha jornada como desenvolvedor. Quer ver como tudo isso foi feito? Acesse o repositório no GitHub!"
+                ],
+                en: [
+                    "<strong>Autasks</strong> was born as a creative and fun way to help people fight procrastination. Developed as my final project during the technical course in Systems Development at ETEC, the app has a simple yet powerful concept: a virtual pet whose survival depends on the user's daily task completion.",
+                    "Using <strong>React Native</strong> with <strong>Expo</strong>, <strong>Redux</strong>, and <strong>Firebase</strong> as the backend, one of the biggest challenges was integrating Firebase properly into the mobile application — especially with our limited technical experience at the time. Even so, we built a functional app with task categories (like health, school, family) and visual elements that make it engaging.",
+                    "Although we didn’t apply advanced architectural patterns, the technical and emotional learning was tremendous. Creating an app that goes beyond functionality to connect emotionally with users through a virtual pet was a truly meaningful experience.",
+                    "The project was recognized as one of the best in our class and remains a milestone in my journey as a developer. Want to see how we built it? Visit the GitHub repository!"
+                ]
+            },
+            deploy: false,
+            github: "https://github.com/ImSena"
         }
+
     ],
     "UI/UX": [
         {
-            id: 5,
+            slug: "lets-sign-mockup",
             title: {
-                pt: "Let's Sign",
-                en: "Let's Sign"
+                pt: "Let's Sign Mockup",
+                en: "Let's Sign Mockup"
             },
-            subtitle:{
+            subtitle: {
                 pt: "Soluções ",
                 en: "A blog manager made with Node."
             },
@@ -140,7 +356,7 @@ const projects = {
     ],
     "Others": [
         {
-            id: 6,
+            slug: "calculadora-java",
             title: {
                 pt: "Calculadora em Java GUI",
                 en: "Java Calculator with GUI"
@@ -183,7 +399,7 @@ const projects = {
             github: "https://github.com/ImSena/CalculadoraJava"
         },
         {
-            id: 7,
+            slug: 'build-solutions',
             title: {
                 pt: "Build Solutions",
                 en: "Build Solutions"
@@ -223,8 +439,8 @@ const projects = {
             deploy: false,
             github: "https://github.com/ImSena/buildSolutions"
         }
-        
-        
+
+
     ]
 };
 

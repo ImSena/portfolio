@@ -86,7 +86,7 @@ function App() {
                     />
                   }
                 />
-                <Route path="/project/:id" element={<Projects />} />
+                <Route path="/project/:slug" element={<Projects />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />

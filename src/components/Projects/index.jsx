@@ -47,7 +47,7 @@ const Projects = forwardRef(({ id }, ref) => {
                             image={project.img}
                             title={project.title[language]}
                             content={project.content[language]}
-                            path={`/project/${project.id}`}
+                            path={`/project/${project.slug}`}
                         />
                     ))
                 }
