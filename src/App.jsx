@@ -10,6 +10,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from "./styles/theme";
 import GlobalStyle from './styles/globalStyles';
 import Cover from './components/Cover';
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
@@ -90,6 +91,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Routes>
               <Footer />
+              <ToastContainer position="top-right" autoClose={3000} theme="dark" />
             </BrowserRouter>
           </div>
         </div>

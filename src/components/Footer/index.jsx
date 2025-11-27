@@ -1,10 +1,10 @@
 import React from "react";
 import FooterStyle from "./style";
-import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 
 const Footer = () => {
@@ -21,10 +21,10 @@ const Footer = () => {
                         <div>Work Together -</div>
                     </div>
 
-                    <a className="email" href="mailto:brunosena14@outlook.com" target="_blank" title="Ir para Outlook">
-                        <PiMicrosoftOutlookLogoFill />
+                    <a className="email" href="mailto:brunosena@corecode.com.br" target="_blank" title="Ir para Outlook">
+                        <MdEmail />
 
-                        BrunoSena14@Outlook.com
+                        brunosena@corecode.com.br
                     </a>
                 </div>
 
